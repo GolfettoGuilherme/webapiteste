@@ -1,0 +1,14 @@
+/Users/GuiGolfetto/Desktop/webapis/Teste02/bin/Debug/netcoreapp2.1/Teste02.deps.json
+/Users/GuiGolfetto/Desktop/webapis/Teste02/bin/Debug/netcoreapp2.1/Teste02.runtimeconfig.json
+/Users/GuiGolfetto/Desktop/webapis/Teste02/bin/Debug/netcoreapp2.1/Teste02.runtimeconfig.dev.json
+/Users/GuiGolfetto/Desktop/webapis/Teste02/bin/Debug/netcoreapp2.1/Teste02.dll
+/Users/GuiGolfetto/Desktop/webapis/Teste02/bin/Debug/netcoreapp2.1/Teste02.pdb
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.csprojAssemblyReference.cache
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.csproj.CoreCompileInputs.cache
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.RazorAssemblyInfo.cache
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.RazorAssemblyInfo.cs
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.AssemblyInfoInputs.cache
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.AssemblyInfo.cs
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.RazorTargetAssemblyInfo.cache
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.dll
+/Users/GuiGolfetto/Desktop/webapis/Teste02/obj/Debug/netcoreapp2.1/Teste02.pdb
