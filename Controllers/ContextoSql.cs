@@ -33,9 +33,9 @@ namespace Teste02.Controllers
                             {
                                 NomeLinha = reader["NomeLinha"].ToString(),
 
-                                Latitude = Convert.ToDouble(reader["Latitude"].ToString()),
+                                Latitude = Convert.ToDouble(reader["Latitude"].ToString()) / 1000000,
 
-                                Longitude = Convert.ToDouble(reader["Longitude"].ToString()),
+                                Longitude = Convert.ToDouble(reader["Longitude"].ToString()) / 1000000,
 
                                 CorLinha = reader["CorLinha"].ToString()
                             });
