@@ -103,5 +103,55 @@ namespace Teste02.Controllers
             }
             return model;
         }
+    
+        public List<ModeloExtracao> Extracao(string idlinha, DateTime dataInicio, DateTime dataFim)
+        {
+            List<ModeloExtracao> lista = new List<ModeloExtracao>();
+
+            string sqlRaw = "spSelExtracao @idlinha, @datamin,@dataMax";
+
+            using(SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+
+                using(SqlCommand cmd = new SqlCommand(sqlRaw, conn))
+                {
+                    cmd.Parameters.AddWithValue("@idlinha", idlinha);
+                    cmd.Parameters.AddWithValue("@datamin", dataInicio);
+                    cmd.Parameters.AddWithValue("@dataMax",dataFim);
+
+                    using(var reader = cmd.ExecuteReader())
+                    {
+                        while(reader.Read())
+                        {
+                            lista.Add(new ModeloExtracao(){
+                                datadem = Convert.ToDateTime(reader["datadem"]),
+                                tipo = reader["tipo"].ToString(),
+                                area = reader["area"].ToString(),
+                                empresa = reader["empresa"].ToString(),
+                                linha = reader["linha"].ToString(),
+                                pass_pgtdin = Convert.ToInt32(reader["pass_pgtdin"]),
+                                pass_pgtcomum = Convert.ToInt32(reader["pass_pgtcomum"]),
+                                pass_pgtbu_comum = Convert.ToInt32(reader["pass_pgtbu_comum"]),
+                                pass_pgt_estud = Convert.ToInt32(reader["pass_pgt_estud"]),
+                                pass_pgtbu_estudm = Convert.ToInt32(reader["pass_pgtbu_estudm"]),
+                                pass_pgtbu_vt = Convert.ToInt32(reader["pass_pgtbu_vt"]),
+                                pass_pgtbu_vtm = Convert.ToInt32(reader["pass_pgtbu_vtm"]),
+                                pass_pgtint_mcptm = Convert.ToInt32(reader["pass_pgtint_mcptm"]),
+                                pass_pgtint_mcptmm = Convert.ToInt32(reader["pass_pgtint_mcptmm"]),
+                                pass_pgt = Convert.ToInt32(reader["pass_pgt"]),
+                                pass_int_onon = Convert.ToInt32(reader["pass_int_onon"]),
+                                pass_grat = Convert.ToInt32(reader["pass_grat"]),
+                                pass_grat_estud = Convert.ToInt32(reader["pass_grat_estud"]),
+                                total_pass = Convert.ToInt32(reader["total_pass"])
+
+                            });
+                        }
+                    }
+                }
+            }
+        
+            return lista;
+        }
     }
 }

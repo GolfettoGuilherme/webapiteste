@@ -1,3 +1,5 @@
+using System;
+
 namespace Teste02.Models
 {
     public class ModeloTeste
@@ -42,5 +44,28 @@ namespace Teste02.Models
         public double MediaGratuidade { get; set; }
 
         public double MediaPagEstudante { get; set; }
+    }
+
+    public class ModeloExtracao 
+    {
+        public DateTime datadem { get; set; }
+        public string tipo { get; set; }
+        public string area { get; set; }
+        public string empresa { get; set; }
+        public string linha { get; set; }
+        public int pass_pgtdin {get; set;}
+        public int pass_pgtcomum {get; set;}
+        public int pass_pgtbu_comum {get; set;}
+        public int pass_pgt_estud {get; set;}
+        public int pass_pgtbu_estudm {get; set;}
+        public int pass_pgtbu_vt {get; set;}
+        public int pass_pgtbu_vtm {get; set;}
+        public int pass_pgtint_mcptm {get; set;}
+        public int pass_pgtint_mcptmm {get; set;}
+        public int pass_pgt {get; set;}
+        public int pass_int_onon {get; set;}
+        public int pass_grat {get; set;}
+        public int pass_grat_estud {get; set;}
+        public int total_pass {get; set;}
     }
 }
